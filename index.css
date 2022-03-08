@@ -33,6 +33,7 @@ h1 {
     margin: 0;
     padding-top:10px;
     font-style: oblique;
+    font-size: 75px;
 }
 
 .titleQuote {
@@ -60,4 +61,32 @@ li {
 li a {
     color: #303030;
     text-decoration: none;
+}
+
+button {
+    width: 75%;
+    display: block;
+    height: 100%;
+    color: black;
+    background-color: green;
+    text-align: center;
+    font-style: oblique;
+    margin: auto;
+    padding: auto;
+    font-size: 65px;
+    font-weight: 200%;
+}
+
+footer {
+    position: absolute;
+    display: block;
+    float: bottom;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    font-size: 25%;
+}
+
+p {
+    text-align: center;
 }
