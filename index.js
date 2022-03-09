@@ -1,5 +1,4 @@
 
-
 // turtleButton code, identify button, run probability calc, output //
 
 let turtleButton = document.getElementById("turtleButton");
