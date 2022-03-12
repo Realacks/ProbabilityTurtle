@@ -3,6 +3,22 @@
 CSS for Probability Turtle Project
 */
 
+@media screen and (max-width:600px) {
+    .hideInMobile {
+        display: none;
+    }
+    .generalText {
+        font-size: 75%;
+    }
+    header.headerImage {
+        width: 150px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width:1080px) {
+    
+}
 
 html {
     height: 100%;
@@ -85,8 +101,10 @@ footer {
     text-align: center;
     bottom: 0;
     font-size: 25%;
+    grid-area: footer;
 }
 
-p {
+.generalText {
     text-align: center;
 }
+
