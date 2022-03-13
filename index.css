@@ -108,3 +108,50 @@ footer {
     text-align: center;
 }
 
+.resultHeader {
+    font-size: 50%;
+}
+
+.headerTitle {
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.resultHeaderImg {
+    width: 100px;
+    height: 75px;
+    border-radius: 50%;
+    display: block;
+    border: 1px solid black;
+    margin: auto;
+    text-align: center;
+}
+
+.loserImg {
+    width: 400px;
+    height: 300px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.congrats {
+    font-size: 75px;
+    padding: 0;
+    margin: 0;
+}
+
+.cash {
+    font-size: 25px;
+    padding: 10px;
+    margin: 0;
+}
+
+.rollAgainText {
+    display: block;
+    box-shadow: #303030;
+    text-shadow: #303030;
+    text-align: center;
+
+}
