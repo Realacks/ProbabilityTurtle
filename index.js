@@ -1,25 +1,30 @@
 
-// turtleButton code, identify button, run probability calc, output //
+// Site Wide Javascript //
 
-
+// Creating turtle button functionality, adding click event listener //
 const turtleButton = document.getElementById("turtleButton");
 
 turtleButton.addEventListener("click", riskIt);
 
+// Accessing local storage to see if previous rolls have been logged, retreiving that array or creating new one. //
 let storedRolls = localStorage.getItem('resultArray');
 
 let resultArray = storedRolls ? JSON.parse(storedRolls) : [];
 
 
-//Trying to log streak to webpage as count of array entries//
+//Calculating count of array entries (ie. successful rolls) and adding streak (count of array logs) to webpage//
 let rollCounter = resultArray.length; 
 let streak = document.getElementById('streakText');
 streak.insertAdjacentText("afterend",rollCounter);
 
+/*
+Roll button function.. Roll dice 1=loss, 2-20=win - navigate to corresponding pages.. 
+Log result to console and add it to array.. Reset Array if loss. Log new array to local storage.
+*/
 function riskIt() {
     function rollDice() {
-        return Math.floor(Math.random() * 20) + 1
-    }
+        return Math.floor(Math.random() * 20) + 1;
+    };
     const diceRoll = rollDice();
     console.log (diceRoll);
     if (diceRoll === 1 ) {
@@ -34,6 +39,5 @@ function riskIt() {
         localStorage.setItem('resultArray', JSON.stringify(resultArray));
     } 
     console.log (resultArray);
-    console.log(rollCounter)
 };
 
