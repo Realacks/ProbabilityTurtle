@@ -88,11 +88,9 @@ nav, ul {
 
 li {
     text-align: center;
-    display: inline;
     padding: 1px;
     margin: 1px;
     font-size: 100%;
-
 }
 
 li a {
@@ -123,9 +121,9 @@ footer {
     font-size: 75%;
 }
 
-.generalText {
-    text-align: center;
-    font-size: 125%;
+.hideInMobile {
+    visibility: hidden;
+    font-size: 0px;
 }
 
 .headerTitle {
@@ -164,23 +162,60 @@ footer {
     text-align: center;
 }
 
-@media screen and (max-width: 600) {
+#streakText {
+    display: block;
+    font-size: 125%;
+    text-align: center;
+}
+
+.generalText {
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) {
     /*
-    Add Hamburger Nav Bar or Vertical Nav
+    Display Nav as Bar, Add Flavor Text
     */
     li {
-        text-align: center;
-        display: block;
+        display: inline;
         padding: 1px;
         margin: 1px;
         font-size: 100%;
     }
-    
-    footer {
-        font-size: 100%;
+
+    .hideInMobile {
+        visibility: visible;
+        text-align: center;
+        font-size: 125%;
     }
 }
 
-@media screen {
-    
+@media screen and (min-width: 889px) {
+    li {
+        display: inline;
+        padding: 1px;
+        margin: 1px;
+        font-size: 100%;
+    }
+
+    @keyframes dizzy {
+        from {
+            transform:rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    .loserImg {
+        animation-name: dizzy;
+        animation-duration: 2500ms;
+        animation-iteration-count: 3;
+    }
+
+    .hideInMobile {
+        visibility: visible;
+        text-align: center;
+        font-size: 125%;
+    }
 }

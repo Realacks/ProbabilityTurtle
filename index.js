@@ -19,7 +19,7 @@ streak.insertAdjacentText("afterend",rollCounter);
 
 /*
 Roll button function.. Roll dice 1=loss, 2-20=win - navigate to corresponding pages.. 
-Log result to console and add it to array.. Reset Array if loss. Log new array to local storage.
+Log result to console and add it to array.. Reset Array if loss. Save new array to local storage.
 */
 function riskIt() {
     function rollDice() {
